@@ -15,6 +15,7 @@ class SearchesController < ApplicationController
       @venues = body_hash['response']['venues']
     else
       @error = body_hash["meta"]["errorDetail"]
+    end
     render 'search'
   end
 end
