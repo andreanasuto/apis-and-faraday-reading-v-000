@@ -5,4 +5,11 @@
   <%= submit_tag "Search!" %>
 <% end %>
 
-<%= @venues %>
+<div>
+  <ul>
+    
+  <% @venues.each do |venue| %>
+    <%= venue["name"] %>
+  <% end %>
+  </ul>
+</div>
