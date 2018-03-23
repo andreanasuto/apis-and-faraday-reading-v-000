@@ -8,6 +8,8 @@
 <div>
   <% if @error %>
     <p> <%= @error %> </p>
+  <%= elsif %>
+    
   <ul>
     <% @venues.each do |venue| %>
     <li> <%= venue["name"] %> </li>
